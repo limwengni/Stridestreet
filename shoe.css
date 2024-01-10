@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:ital,wght@0,300;0,700;1,700&family=Roboto:wght@300;400;700&display=swap');
+
+
+/* font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif; */
+
+/* color
+  pink :  #FF3F57 ;
+  light-pink : #FBD9EC ;
+  red : #712D35 ;
+  neon : #D4DB5F;
+  grey-border-button : ECEEF0 ;
+*/
+/* font-setting */
+body {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 150px;
+}
+
+h2 {
+    font-size: 90px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h5 {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* header text */
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0);
+}
+
+.text-pink {
+    color: #FF3F57;
+}
+
+.text-neon {
+    color: #D4DB5F;
+}
+
+.text-button {
+    letter-spacing: 3px;
+}
+
+/* button setting */
+
+.btn:hover {
+    color: #FF3F57 !important;
+
+}
+
+
+
+/* ============================ */
+/*          Home Webpage        */
+/* ============================ */
+
+.bg-pink {
+    background-color: #FBD9EC !important;
+}
+
+/* header */
+
+
+.mainNav .col:first-child {
+    width: 15%;
+    padding-left: 1rem;
+}
+
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+
+.dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+}
+
+.dropdown-menu>li:hover>.dropdown-submenu {
+    display: block;
+}
+
+.sideNav>ul {
+    align-items: center;
+}
+
+.sideNav>ul>li+li {
+    margin-left: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #FF3F57;
+}
+
+/* ==================================================== */
+
+/* banner */
+
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold 700;
+    line-height: 20px;
+    bottom: 35%;
+    left: 15%;
+}
+
+.banner-title>i>h1 {
+    font-size: 4rem;
+}
+
+
+
+
+/* footer */
+
+.footer-a>a:hover {
+    color: #FF3F57;
+}
+
+i.bi:hover {
+    color: #FF3F57 !important;
+}
+
+.footer-logo>a+a {
+    margin-left: 20%;
+}
+
+.footer-a>a {
+    display: inline-table;
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-a>a+a {
+    margin-left: 20%;
+}
+
+
+.diamond-line {
+    max-width: 35%;
+    height: 1px;
+    background-color: black;
+    position: relative;
+    margin: 0 auto;
+}
+
+.diamond-line::before,
+.diamond-line::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -1.2px;
+
+}
+
+.diamond-line::before {
+    left: 0;
+    transform: rotate(45deg);
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    content: " ";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+
+    border: 1px solid;
+    background-color: black;
+
+}
+
+.diamond-line::after {
+    right: 0;
+    transform: rotate(45deg);
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    content: " ";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+
+    border: 1px solid;
+    background-color: black;
+}
+
+/* ================================== */
+/*          About Us Webpage        */
+/* ================================== */
+.home {
+    text-transform: uppercase;
+    width: 20%;
+    height: 65px;
+    background-color: #712D35;
+    color: white;
+    font-size: 35px;
+    border: none;
+    letter-spacing: 0.2em;
+
+}
+
+button.home:hover {
+    background-color: #FF3F57;
+}
+
+.table {
+    border: white;
+}
+
+td:nth-child(even) {
+    background-color: #FF3F57;
+    color: white;
+}
+
+.form-select:focus {
+    box-shadow: inset 0 0 0 2px #712D35;
+}
+
+hr {
+    color: #FF3F57;
+    size: 5px bold;
+}
+
+#butNowBtn {
+    text-transform: uppercase;
+    width: 100%;
+    height: 100px;
+    background-color: #712D35;
+    color: white;
+    font-size: 35px;
+    border: none;
+    letter-spacing: 0.2em;
+    text-align: center;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*cart page*/
+.container py-4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ChildContainer{
+    width: 70%;
+    margin: 0 auto;
+}

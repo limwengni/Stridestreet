@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:ital,wght@0,300;0,700;1,700&family=Roboto:wght@300;400;700&display=swap');
+
+.check{
+    margin:0px auto;
+    width:70px;
+    height:70px;
+    border-radius:100%;
+    background-color: green;
+    color: white;
+    text-align:center;
+}
+.check i{
+    vertical-align:middle;
+    padding-top: 10px;
+    line-height:50px;
+    font-size:50px;
+}
+.notify_successbox{
+    margin-top: 10px;
+}
+#PaymentTxt{
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#content {
+    text-align: center;
+    width: 100%;
+    background: #fff;
+    padding: 25px 20px;
+    padding-bottom: 15px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+#Box {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.divider{
+    color: #FF3F57;
+    height: 2px;
+}
+#TransactionBox{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 5px;
+}
+.LeftText, .RightText{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+    text-align: center;
+}
+.LeftText{
+    color: #FF3F57;
+    text-align: left;
+    letter-spacing: 0.2em;
+}
+.RightText{
+    text-align: right;
+}
+#ReturnBtn{
+    text-transform: uppercase;
+    width: 100%;
+    height: 100px;
+    background-color: #712D35;
+    color: white;
+    font-size: 35px;
+    border: none;
+    letter-spacing: 0.2em;
+    text-align: center;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkStatusBtn button{
+    color: white; 
+    background-color: #8d464e;
+    padding: 11px 15px;
+    border: none;
+    font-weight: bold;
+}
+.checkStatusBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.checkStatusBtn a, .checkStatusBtn a:hover{
+    color: white;
+}

@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Payment Success</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/paymentSuccess.css"/>
+        <script>
+            $(function () {
+                $('#header').load("header.html");
+            });
+            $(function () {
+                $('#footer').load("footer.html");
+            });
+        </script>
+    </head>
+    <body>
+        <div id="header"></div>
+
+        <div>
+            <div id="content">
+                <div class="notify_successbox">
+                    <div class="check"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div id="PaymentTxt">Payment Successful!</div>
+                </div>
+
+                <div id="Box">
+                    <hr class="divider">
+
+                    <div id="TransactionBox">
+                        <div class="LeftText">transaction id</div>
+                        <div class="RightText">1234567890</div>
+                        <div class="LeftText">payment method</div>
+                        <div class="RightText">cash</div>
+                        <div class="LeftText">transaction status</div>
+                        <div class="RightText">success</div>
+                        <div class="LeftText">amount</div>
+                        <div class="RightText">RM289.00</div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="ReturnDiv">
+                <a href="#" id="ReturnBtn">return to home</a>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/gui.css"/>
+        <script>
+            $(function () {
+                $('#header').load("header.jsp");
+            });
+            $(function () {
+                $('#footer').load("footer.jsp");
+            });
+        </script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <!-- banner -->
+    <!-- banner -->
+    <div class="position-relative">
+        <img class="banner image-fluid" src="assets/images/banner-1.jpg" alt="banner">
+        <div class="banner-title position-absolute text-white">
+            <h1 class="text-pink"><b>POWER</b> </h1><br>
+            <p style="font-family: 'Montserrat', sans-serif;">Take Your Fitness to the Next Level with Us</h1>
+            <p>
+            <p>Whether you're hitting the court, pounding the <br>
+                pavement, or taking on the trails, our <br>
+                high-performance sport shoes are designed to <br>
+                help you reach your full potential. </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="text-center py-4">
+            <h2 class="text-pink">STEP INTO WHAT FEELS GOOD</h2>
+            <h5>Cause everyone should know the feeling of running in that perfect pair.</h5>
+            <a href="shoe-finder.html"><button class="btn-dark btn-rounded px-3 py-2">Find Your Shoe</button></a>
+        </div>
+    </div>
+    
+    <!-- promotion banner -->
+    <div class="text-center">
+        <img src="assets/images/promote.png" alt="promote-banner">
+    </div>
+
+    <!-- home content -->
+    <div class="container py-5">
+            <h3 class="text-start"><b> The Essentials</b></h3>
+            <div class="row row-cols-3 category text-start">
+                <div class="col">
+                    <img class="img-fluid" src="assets/images/cat-men.jpg" alt="">
+                    <a href="showAllProd"><button type="button" class="btn-dark btn-rounded m-2 px-3 py-1">Men's</button></a>
+                </div>
+                <div class="col">
+                    <img class="img-fluid" src="assets/images/cat-women.jpg" alt="">
+                    <a href="showAllProd"><button type="button" class="btn-dark btn-rounded m-2 px-3 py-1">Women's</button></a>
+                </div>
+                <div class="col">
+                    <img class="img-fluid" src="assets/images/cat-kids.jpg" alt="">
+                    <a href="showAllProd"><button type="button" class="btn-dark btn-rounded m-2 px-3 py-1">Kid's</button></a>
+                </div>
+            </div>
+    </div>
+        <div id="footer"></div>
+    </body>
+</html>

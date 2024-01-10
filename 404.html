@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>404</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/gui.css"/>
+        <script>
+            $(function () {
+                $('#header').load("header.jsp");
+            });
+            $(function () {
+                $('#footer').load("footer.jsp");
+            });
+        </script>
+    </head>
+    <body>
+        <div id="header"></div>
+<!--        START YOUR CONTENT-->
+<div class="container py-4">
+        <div class="text-center">
+            <h2 class="py-3"><span class="text-pink">404</span> PAGE NOT FOUND</h2>
+            <h3 class="pb-5">We Can't find the page you looking for, it will return to the</h3>
+            <div class="text-center">
+                <button class="home"><b>HOME</b> </button>
+
+            </div>
+            <img class="image-fluid mw-100 py-5" src="assets/images/about-us.jpg" alt="image">
+
+
+        </div>
+    </div>
+        <div id="footer"></div>
+    </body>
+</html>

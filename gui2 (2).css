@@ -1,0 +1,824 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 21, 2023, 3:15:43 PM
+    Author     : jmok4
+*/
+
+/*********display staff table*****************/
+
+.displayStaffTable-container{
+    width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+table.table-bordered{
+    border: 8px white;
+}
+
+table thead{
+    background-color: #FF3F57;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+table tbody{
+    background-color: pink;
+}
+
+table tr{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.displayStaffTitle-container h3{
+    padding-left: 175px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Roboto';
+}
+
+.displayStaff-backBtn{
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.displayStaff-backBtn button{
+    border: none;
+    color: white;
+    background-color: #8d464e;
+    width: 150px;
+    padding: 11px 15px;
+    font-weight: bold;
+}
+
+/*************display customer pofile***************/
+
+.profileTitle-container h3{
+    padding-left: 250px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.displayProfile-container.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.displayProfile-container.col {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.displayProfile-container.col:last-child {
+    margin-top: -20px;
+}
+
+.displayProfile-container label {
+    display: inline-block;
+    width: 150px; /* adjust the width as needed */
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #FF3F57;
+}
+
+.displayProfile-container{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 800px;
+
+}
+
+.displayProfile-container input{
+    font-weight: bold;
+    border: none;
+}
+
+.customerProfileEditBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.customerProfileEditBtn button{
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #8d464e;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 35px;
+    margin-bottom: 20px
+}
+
+.backBtn button{
+    text-transform: uppercase;
+    width: 100%;
+    height: 70px;
+    background-color: #712D35;
+    color: white;
+    font-size: 20px;
+    border: none;
+    letter-spacing: 0.2em;
+}
+
+.displayProfile-container input[readonly]{
+    border: none;
+    outline: none;
+}
+
+textarea[readonly]{
+    border: none;
+    outline: none;
+    resize: none !important;
+}
+
+
+textarea[readonly]:focus{
+    border: none !important;
+    outline: none !important;
+    resize: none !important;
+}
+
+/***********edit customer profile*********/
+
+.editProfile-container.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.editProfile-container.col {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.editProfile-container.col:last-child {
+    margin-top: -20px;
+}
+
+.editProfile-container label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #FF3F57;
+}
+
+.editProfile-container{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 800px;
+
+}
+
+.editProfile-container input{
+    font-weight: bold;
+    border: 2px solid #FF3F57;
+}
+
+.editProfile-container textarea{
+    font-weight: bold;
+    border: 2px solid #FF3F57 !important;
+    resize: none !important;
+    width: 195px !important;
+}
+
+.editProfileBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.editProfileBtn button{
+    border: none;
+    color: white;
+    background-color: #8d464e;
+    width: 150px;
+    padding: 11px 15px;
+    font-weight: bold;
+}
+
+/*********Login Page*************/
+
+.login-container{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-style: hidden;
+    border-radius: 35px;
+    width: 350px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background: linear-gradient(to right, #ffff66 0%, #ff66ff 100%);
+}
+
+.login-container input{
+    border: none;
+    border-bottom: 3px solid #FF3F57;
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+.login-container button{
+    border-radius: 12px;
+    padding: 4px 20px;
+    border: none;
+    color: white;
+    background-color: #FF3F57;
+    margin-bottom: 10px;
+}
+
+.login-container a{
+    border-bottom: 2px solid #FF3F57;
+    font: roboto;
+    color: black;
+}
+
+/*************sign up page****************/
+
+.signUpTitle-container h3{
+    padding-left: 250px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Roboto';
+}
+
+.signUp-container.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.signUp-container.col {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.signUp-container.col:last-child {
+    margin-top: -20px;
+}
+
+.signUp-container label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #FF3F57;
+}
+
+.signUp-container{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 800px;
+}
+
+.signUpBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.signUpBtn button{
+    border: 1.5px dotted black;
+    color: white;
+    background-color: #8d464e;
+    width: 150px;
+    padding: 11px 15px;
+    font-weight: bold;
+}
+
+/*******register staff page****/
+
+.registerStaffTitle-container h3{
+    padding-left: 250px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Roboto';
+}
+
+.registerStaff-container.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.registerStaff-container{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 800px;
+    border: 2px dashed grey;
+}
+
+.registerStaff-container.col {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.registerStaff-container.col:last-child {
+    margin-top: -20px;
+}
+
+.registerStaff-container label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #FF3F57;
+}
+
+.registerStaffBtn button{
+    border: 1.5px dotted black;
+    color: white;
+    background-color: #8d464e;
+    width: 150px;
+    padding: 11px 15px;
+}
+
+.registerStaffBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*******display and edit staff page****/
+.staffProfileTitle-container h3{
+    padding-left: 250px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Roboto';
+}
+
+.staffProfile-container.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.staffProfile-container{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 800px;
+}
+
+.staffProfile-container.col {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.staffProfile-container.col:last-child {
+    margin-top: -20px;
+}
+
+.staffProfile-container label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #FF3F57;
+}
+
+.staffProfileEditBtn button{
+    color: white;
+    background-color: #8d464e;
+    width: 150px;
+    padding: 11px 15px;
+    border: none;
+    font-weight: bold;
+}
+
+.staffProfileEditBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.staffProfile-container input[readonly]{
+    border: none;
+}
+
+.displayStaff-updateBtn button{
+    background-color: green;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.displayStaff-deleteBtn button{
+    background-color: red;
+    border: none;   
+}
+
+.displayStaff-deleteBtn a.rightBtn{
+    color:white;
+    font-weight: bold;
+}
+
+/**UPDATE STAFF*/
+
+.updateStaffProfile-container.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.updateStaffProfile-container{
+    border: 2px dashed grey;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 800px;
+}
+
+.updateStaffProfile-container.col {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.updateStaffProfile-container.col:last-child {
+    margin-top: -20px;
+}
+
+.updateStaffProfile-container label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #FF3F57;
+}
+
+.updateStaffProfileEditBtn button{
+    color: white; 
+    background-color: #8d464e;
+    width: 150px;
+    padding: 11px 15px;
+    border: none;
+}
+
+.updateStaffProfileEditBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.addProduct-container input{
+    font-weight: bold;
+    
+}
+
+.addProduct-container label {
+    display: inline-block;
+    width: 250px; 
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #FF3F57;
+}
+.addProduct-container{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 800px;
+    border: 2px dashed grey;
+    margin: auto;
+}
+
+.addProductBtn button{
+    color: white; 
+    background-color: #8d464e;
+    width: 150px;
+    padding: 11px 15px;
+    border: none;
+}
+
+.addProductBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.addProductTittle h3{
+    padding-left: 250px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Roboto';
+}
+
+/*generate sales report**/
+
+.generateSalesReport-container{
+    width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.generateSalesReportTittle-container h5{
+    padding-left: 110px;
+    padding-top: 30px;
+}
+
+.generateSalesReportTittleHeading-container h3{
+    padding-top: 20px;
+    padding-left: 110px;
+}
+
+/**UPDATE STAFF*/
+
+.updateStaffProfile-container.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.updateStaffProfile-container{
+    border: 2px dashed grey;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 800px;
+}
+
+.updateStaffProfile-container.col {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.updateStaffProfile-container.col:last-child {
+    margin-top: -20px;
+}
+
+.updateStaffProfile-container label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #FF3F57;
+}
+
+.updateStaffProfileEditBtn button{
+    color: white; 
+    background-color: #8d464e;
+    width: 150px;
+    padding: 11px 15px;
+    border: none;
+}
+
+.updateStaffProfileEditBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*generate sales report**/
+
+.generateSalesReport-container{
+    width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.generateSalesReportTittle-container h5{
+    padding-left: 110px;
+    padding-top: 30px;
+}
+
+.generateSalesReportTittleHeading-container h3{
+    padding-top: 20px;
+    padding-left: 110px;
+}
+
+/**update customer table**/
+
+.updateCustomerTable-container.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.updateCustomerTable-container.col {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.updateCustomerTable-container.col:last-child {
+    margin-top: -20px;
+}
+
+.updateCustomerTable-container label {
+    display: inline-block;
+    width: 150px; 
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #FF3F57;
+}
+
+.updateCustomerTable-container{
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 800px;
+  border: 2px dashed grey;
+  
+}
+
+.updateCustomerTable-container input{
+    font-weight: bold;
+    border: 2px solid #FF3F57;
+}
+
+.updateCustomerTableBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.updateCustomerTableBtn button{
+    border: none;
+    color: white; 
+    background-color: #8d464e;
+    width: 150px;
+    padding: 11px 15px;
+    font-weight: bold;
+}
+
+.updateCustomerTableTittle h3{
+    padding-left: 250px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Roboto';
+}
+
+/**update product table*/
+
+.updateProductTable-container input{
+    font-weight: bold;
+    
+}
+
+.updateProductTable-container label {
+    display: inline-block;
+    width: 250px; 
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #FF3F57;
+}
+.updateProductTable-container{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 800px;
+    border: 2px dashed grey;
+    margin: auto;
+}
+
+.updateProductTableEditBtn button{
+    color: white; 
+    background-color: #8d464e;
+    width: 150px;
+    padding: 11px 15px;
+    border: none;
+}
+
+.updateProductTableEditBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.updateProductTableTittle-container h3{
+    padding-left: 250px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Roboto';
+}
+/**register staff page*/
+
+.registerStaffTitle-container h3{
+    padding-left: 250px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Roboto';
+}
+
+.registerStaff-container.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.registerStaff-container{
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 800px;
+  border: 2px dashed grey;
+}
+
+.registerStaff-container.col {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.registerStaff-container.col:last-child {
+    margin-top: -20px;
+}
+
+.registerStaff-container label {
+    display: inline-block;
+    width: 150px; 
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #FF3F57;
+}
+
+.registerStaffBtn button{
+    color: white; 
+    background-color: #8d464e;
+    width: 150px;
+    padding: 11px 15px;
+    font-weight: bold;
+}
+
+.registerStaffBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/***add customer***/
+
+.addCustomer-container input{
+    font-weight: bold;
+}
+
+.addCustomer-container label {
+    display: inline-block;
+    width: 250px; 
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #FF3F57;
+}
+.addCustomer-container{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 800px;
+    border: 2px dashed grey;
+    margin: auto;
+}
+
+.addCustomerBtn button{
+    color: white; 
+    background-color: #8d464e;
+    width: 150px;
+    padding: 11px 15px;
+    border: none;
+}
+
+.addCustomerBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.addCustomerTittle h3{
+    padding-left: 250px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Roboto';
+}

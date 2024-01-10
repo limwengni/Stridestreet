@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/gui.css"/>
+        <script>
+            $(function () {
+                $('#header').load("header.jsp");
+            });
+            $(function () {
+                $('#footer').load("footer.jsp");
+            });
+
+            // ===========================
+// =====Blog - blog.html=====
+// ===========================
+// Load More
+            $(document).ready(function () {
+                // Hide content first
+                $(".blog").slideUp(0);
+
+                $(".blog").slice(0, 3).show();
+                $("#loadMore").on("click", function (e) {
+                    e.preventDefault();
+                    $(".blog:hidden").slice(0, 2).each(function (index, el) {
+                        $(el).removeClass('d-none').slideDown()
+                    });
+                    if ($(".blog:hidden").length == 0) {
+                        $("#loadMore").text("No Content").addClass("noContent");
+                    }
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <!--        START YOUR CONTENT-->
+        <div class="container py-4">
+            <div class="text-center">
+                <h2 class="py-3">BLOG</h2>
+            </div>
+            <div class="text-left">
+                <div class="row blog py-2">
+                    <div class="col-4" id="blog-img">
+                        <img class="img-thumbnail" src="assets/images/blog-1.jpg" alt="1">
+                    </div>
+                    <div class="col-8" id="blog-details">
+                        <h3>2021 Style Guide: The Biggest Fall Trends</h3>
+                        <h4>The excitement of fall fashion is here and I’m already loving some of the trend
+                            forecasts.Different sports require different types of shoes. In this article, you could explore
+                            how wearing the right shoes can help prevent injuries, improve performance, and enhance your
+                            overall experience of the sport. </h4>
+                    </div>
+                </div>
+                <div class="row blog py-2">
+                    <div class="col-4" id="blog-img">
+                        <img class="img-thumbnail" src="assets/images/blog-2.jpg" alt="2">
+                    </div>
+                    <div class="col-8" id="blog-details">
+                        <h3 class="text-pink">How to extend the life of your sports shoes:</h3>
+                        <h4>Sports shoes can be an investment, so it's important to take care of them to make them last as
+                            long as possible. In this article, you could provide tips for extending the life of your shoes,
+                            such as rotating them, storing them properly, and replacing worn out parts.</h4>
+                    </div>
+                </div>
+                <div class="row blog py-2">
+                    <div class="col-4" id="blog-img">
+                        <img class="img-thumbnail" src="assets/images/blog-3.jpg" alt="3">
+                    </div>
+                    <div class="col-8" id="blog-details">
+                        <h3>The latest trends in sports shoe design: </h3>
+                        <h4>The sports shoe industry is constantly evolving, with new technologies and materials being
+                            developed all the time. In this article, you could explore some of the latest trends in sports
+                            shoe design, such as minimalist shoes, carbon-fiber plates, and sustainable materials.</h4>
+                    </div>
+                </div>
+                <div class="row blog py-2">
+                    <div class="col-4" id="blog-img">
+                        <img class="img-thumbnail" src="assets/images/blog-4.jpg" alt="4">
+                    </div>
+                    <div class="col-8" id="blog-details">
+                        <h3 class="text-pink">A guide to cleaning and maintaining your sports shoes:</h3>
+                        <h4>Sports shoes can take a beating, especially if you're using them regularly for your sport. In
+                            this article, you could provide tips and tricks for cleaning and maintaining your shoes to keep
+                            them looking and performing their best.
+                        </h4>
+                    </div>
+                </div>
+                <div class="row blog py-2">
+                    <div class="col-4" id="blog-img">
+                        <img class="img-thumbnail" src="assets/images/blog-5.jpg" alt="5">
+                    </div>
+                    <div class="col-8" id="blog-details">
+                        <h3>The science behind sports shoes: </h3>
+                        <h4>Finally, you could explore some of the scientific research that goes into designing and testing
+                            sports shoes. In this article, you could discuss the role of biomechanics, materials science,
+                            and other fields in creating the perfect shoe for each sport and athlete.
+                        </h4>
+                    </div>
+                </div>
+                <div class="row blog py-2">
+                    <div class="col-4" id="blog-img">
+                        <img class="img-thumbnail" src="assets/images/blog-6.jpg" alt="6">
+                    </div>
+                    <div class="col-8" id="blog-details">
+                        <h3 class="text-pink">The history of sports shoes:</h3>
+                        <h4>Sports shoes have a long and interesting history, with many iconic designs and innovations over
+                            the years. In this article, you could explore the evolution of sports shoes, from the early days
+                            of leather and canvas to the high-tech materials and designs of today.
+                        </h4>
+                    </div>
+                </div>
+                <div class="row blog py-2">
+                    <div class="col-4" id="blog-img">
+                        <img class="img-thumbnail" src="assets/images/blog-7.jpg" alt="7">
+                    </div>
+                    <div class="col-8" id="blog-details">
+                        <h3>The best shoes for different types of running: </h3>
+                        <h4>Running can take many forms, from short sprints to long-distance marathons. In this article, you
+                            could explore the different types of running shoes that are recommended for different types of
+                            running, such as trail running, road running, and track running.
+                        </h4>
+                    </div>
+                </div>
+                <div class="row blog py-2">
+                    <div class="col-4" id="blog-img">
+                        <img class="img-thumbnail" src="assets/images/blog-8.jpg" alt="8">
+                    </div>
+                    <div class="col-8" id="blog-details">
+                        <h3 class="text-pink">The future of sports shoe design:</h3>
+                        <h4>What's next for sports shoe design? In this article, you could discuss some of the emerging
+                            technologies and trends that are shaping the future of sports shoes, such as 3D printing, smart
+                            sensors, and customizable designs.
+                        </h4>
+                    </div>
+                </div>
+                <div class="row blog py-2">
+                    <div class="col-4" id="blog-img">
+                        <img class="img-thumbnail" src="assets/images/blog-9.jpg" alt="9">
+                    </div>
+                    <div class="col-8" id="blog-details">
+                        <h3>How to shop for sports shoes online:</h3>
+                        <h4>Online shopping can be a convenient way to find the perfect pair of sports shoes, but it can
+                            also be challenging to find the right fit without trying them on first. In this article, you
+                            could provide tips for shopping for sports shoes online, such as measuring your feet, reading
+                            reviews, and taking advantage of return policies.
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button class="loadMore" id="loadMore"><b>LOAD MORE</b> </button>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+        <div id="footer"></div>
+    </body>
+</html>
